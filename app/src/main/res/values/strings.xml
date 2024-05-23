@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">EscapeLabyrinth</string>
+    <string name="Ueberschrift" translatable="false">Escape Labyrinth</string>
+    <string name="Author1" translatable="false">Dominik Puner</string>
+    <string name="Author2" translatable="false">Alex Brunner</string>
+    <string name="Play">Play</string>
+    <string name="exit">exit</string>
+    <string name="host_game">Host new Game</string>
+    <string name="join">Join game</string>
+    <string name="singleplayer">Singleplayer</string>
+    <string name="gamemode_back">Back</string>
+</resources>
