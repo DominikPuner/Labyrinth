@@ -30,8 +30,9 @@ public class GameSelect extends AppCompatActivity {
 
         Button singlePlayer = findViewById(R.id.singleplayer_button);
         singlePlayer.setOnClickListener(v -> {
-            Intent SinglePlayer = new Intent(this, SinglePlayer.class);
+            Intent SinglePlayer = new Intent(GameSelect.this, SinglePlayer.class);
             startActivity(SinglePlayer);
+
         });
 
     }

@@ -1,12 +1,25 @@
 package com.example.labyrinth;
 
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SinglePlayer extends AppCompatActivity {
+public class SinglePlayer extends AppCompatActivity implements GestureDetector.OnGestureListener {
+
+    private GestureDetector gestureDetector;
+
+    @Override
+    public <T extends View> T findViewById(int id) {
+        return super.findViewById(id);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +38,72 @@ public class SinglePlayer extends AppCompatActivity {
 
         int characterImageResource = R.drawable.standing_looking_right;
         characterImageView.setImageResource(characterImageResource);
+
+        gestureDetector = new GestureDetector(this, this);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        return gestureDetector.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onDown(@NonNull MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(@NonNull MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(@NonNull MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll(@Nullable MotionEvent e1, @NonNull MotionEvent e2, float distanceX, float distanceY) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(@NonNull MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY){
+        assert e1 != null;
+        float deltaX = e2.getX() - e1.getX();
+        float deltaY = e2.getY() - e1.getY();
+
+        float absDeltaX = Math.abs(deltaX);
+        float absDeltaY = Math.abs(deltaY);
+
+        // Schwellenwerte für minimale Distanz und Geschwindigkeit
+        float SWIPE_THRESHOLD = 100;
+        float SWIPE_VELOCITY_THRESHOLD = 100;
+
+        TextView textview = findViewById(R.id.richtungAusgabe);
+
+        if (absDeltaX > absDeltaY) { // Horizontale Bewegung
+            if (absDeltaX > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+                if (deltaX > 0) {
+                    System.out.println("rechts");
+                } else {
+                    System.out.println("links");
+                }
+            }
+        } else { // Vertikale Bewegung
+            if (absDeltaY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+                if (deltaY > 0) {
+                    System.out.println("unten");
+                } else {
+                    System.out.println("oben");
+                }
+            }
+        }
+        return true;
     }
 }

@@ -13,6 +13,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/standing_looking_right"
-        android:layout_centerInParent="true"/>
+        app:srcCompat="@drawable/standing_looking_right" />
+
+    <ImageView
+        android:id="@+id/wallImageTop"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/mauer_tile" />
+
+    <ImageView
+        android:id="@+id/wallImageBottom"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/mauer_tile" />
+
+    <ImageView
+        android:id="@+id/wallImageLeft"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/mauer_tile" />
+
+    <ImageView
+        android:id="@+id/wallImageRight"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/mauer_tile"/>
+
+    <EditText
+        android:id="@+id/richtungAusgabe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="122dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
