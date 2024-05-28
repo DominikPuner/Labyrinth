@@ -86,21 +86,30 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
         float SWIPE_VELOCITY_THRESHOLD = 100;
 
         TextView textview = findViewById(R.id.richtungAusgabe);
+        ImageView characterView = findViewById(R.id.characterImage);
+        Character player = new Character(50, 50, 100, characterView);
 
         if (absDeltaX > absDeltaY) { // Horizontale Bewegung
             if (absDeltaX > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                 if (deltaX > 0) {
-                    System.out.println("rechts");
+                    player.moveCharacter(1);
+                    textview.setText("rechts");
                 } else {
-                    System.out.println("links");
+                    player.moveCharacter(2);
+
+                    textview.setText("links");
                 }
             }
         } else { // Vertikale Bewegung
             if (absDeltaY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (deltaY > 0) {
-                    System.out.println("unten");
+                    player.moveCharacter(3);
+
+                    textview.setText("unten");
                 } else {
-                    System.out.println("oben");
+                    player.moveCharacter(4);
+
+                    textview.setText("oben");
                 }
             }
         }
