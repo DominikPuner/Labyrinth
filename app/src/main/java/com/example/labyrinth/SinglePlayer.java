@@ -1,19 +1,23 @@
 package com.example.labyrinth;
 
+
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SinglePlayer extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
     private GestureDetector gestureDetector;
+    List<ImageView> viewList = new ArrayList<>();
 
     @Override
     public <T extends View> T findViewById(int id) {
@@ -38,12 +42,24 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
 
         int characterImageResource = R.drawable.standing_looking_right;
         characterImageView.setImageResource(characterImageResource);
+        characterImageView.setX(10);
+        characterImageView.setY(10);
 
         gestureDetector = new GestureDetector(this, this);
+
+        setMauern();
+    }
+
+    private void setMauern() {
+        viewList.add(findViewById(R.id.wallImageBottom));
+        viewList.add(findViewById(R.id.wallImageLeft));
+        viewList.add(findViewById(R.id.wallImageRight));
+        viewList.add(findViewById(R.id.wallImageTop));
+
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event){
+    public boolean onTouchEvent(MotionEvent event) {
         return gestureDetector.onTouchEvent(event);
     }
 
@@ -73,7 +89,7 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
     }
 
     @Override
-    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY){
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         assert e1 != null;
         float deltaX = e2.getX() - e1.getX();
         float deltaY = e2.getY() - e1.getY();
@@ -85,34 +101,27 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
         float SWIPE_THRESHOLD = 100;
         float SWIPE_VELOCITY_THRESHOLD = 100;
 
-        TextView textview = findViewById(R.id.richtungAusgabe);
         ImageView characterView = findViewById(R.id.characterImage);
-        Character player = new Character(50, 50, 100, characterView);
+        Character player = new Character(characterView.getWidth(), characterView.getHeight(), characterView.getWidth(), characterView, characterView.getWidth());
 
         if (absDeltaX > absDeltaY) { // Horizontale Bewegung
             if (absDeltaX > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
                 if (deltaX > 0) {
-                    player.moveCharacter(1);
-                    textview.setText("rechts");
+                    player.moveCharacter(1, viewList);
                 } else {
-                    player.moveCharacter(2);
-
-                    textview.setText("links");
+                    player.moveCharacter(2, viewList);
                 }
             }
         } else { // Vertikale Bewegung
             if (absDeltaY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (deltaY > 0) {
-                    player.moveCharacter(3);
-
-                    textview.setText("unten");
+                    player.moveCharacter(3, viewList);
                 } else {
-                    player.moveCharacter(4);
-
-                    textview.setText("oben");
+                    player.moveCharacter(4, viewList);
                 }
             }
         }
+
         return true;
     }
 }
