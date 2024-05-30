@@ -6,13 +6,41 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/characterImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/wallImage"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <ImageView
+        android:id="@+id/wallImage"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
         app:srcCompat="@drawable/standing_looking_right" />
 
     <ImageView
@@ -20,39 +48,640 @@
         android:layout_width="0dp"
         android:layout_height="20dp"
         android:scaleType="fitXY"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/mauer_tile"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/mauer_tile" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/wallImageBottom"
         android:layout_width="0dp"
         android:layout_height="20dp"
         android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/mauer_tile" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/wallImageLeft"
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wallImage3"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wallImage3"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.359"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <ImageView
+        android:id="@+id/wallImage3"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/mauer_tile" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ImageView
+        android:id="@+id/wallImage3"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage3"
+        android:layout_width="170dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageView
+        android:id="@+id/wallImage4"
+        android:layout_width="14dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <ImageView
+        android:id="@+id/wallImage4"
+        android:layout_width="14dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <ImageView
+        android:id="@+id/wallImage4"
+        android:layout_width="14dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <ImageView
+        android:id="@+id/wallImage5"
+        android:layout_width="14dp"
+        android:layout_height="147dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <ImageView
+        android:id="@+id/wallImage5"
+        android:layout_width="14dp"
+        android:layout_height="147dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <ImageView
+        android:id="@+id/wallImage6"
+        android:layout_width="14dp"
+        android:layout_height="147dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageView
+        android:id="@+id/wallImage6"
+        android:layout_width="14dp"
+        android:layout_height="147dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageView
+        android:id="@+id/wallImage6"
+        android:layout_width="14dp"
+        android:layout_height="147dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <ImageView
+        android:id="@+id/wallImage7"
+        android:layout_width="14dp"
+        android:layout_height="32dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <ImageView
+        android:id="@+id/wallImage8"
+        android:layout_width="60dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <ImageView
+        android:id="@+id/wallImage8"
+        android:layout_width="60dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <ImageView
+        android:id="@+id/wallImage8"
+        android:layout_width="60dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageView
+        android:id="@+id/wallImage8"
+        android:layout_width="60dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageView
+        android:id="@+id/wallImage9"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <ImageView
+        android:id="@+id/wallImage9"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <ImageView
+        android:id="@+id/wallImage9"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <ImageView
+        android:id="@+id/wallImage10"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <ImageView
+        android:id="@+id/wallImage10"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <ImageView
+        android:id="@+id/wallImage11"
+        android:layout_width="78dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage11"
+        android:layout_width="78dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage11"
+        android:layout_width="78dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage12"
+        android:layout_width="14dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageView
+        android:id="@+id/wallImage12"
+        android:layout_width="14dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <ImageView
+        android:id="@+id/wallImage13"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+
+    <ImageView
+        android:id="@+id/wallImage13"
+        android:layout_width="14dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813" />
+
+    <ImageView
+        android:id="@+id/wallImage14"
+        android:layout_width="14dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/wallImage16"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="176dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <ImageView
+        android:id="@+id/wallImage16"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="176dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <ImageView
+        android:id="@+id/wallImage17"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <ImageView
+        android:id="@+id/wallImage17"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <ImageView
+        android:id="@+id/wallImage15"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageView
+        android:id="@+id/wallImage15"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <ImageView
+        android:id="@+id/wallImage18"
+        android:layout_width="14dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <ImageView
+        android:id="@+id/wallImage18"
+        android:layout_width="14dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <ImageView
+        android:id="@+id/wallImage18"
+        android:layout_width="14dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <ImageView
+        android:id="@+id/wallImage19"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage19"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage19"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <ImageView
+        android:id="@+id/wallImage19"
+        android:layout_width="60dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage1"
+        android:layout_width="52dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage1"
+        android:layout_width="52dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/wallImage1"
+        android:layout_width="52dp"
+        android:layout_height="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mauer_tile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/wallImageRight"
         android:layout_width="20dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/mauer_tile"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
