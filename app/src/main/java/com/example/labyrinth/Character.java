@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.graphics.Rect;
+import android.util.Log;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
@@ -30,6 +31,7 @@ public class Character {
                 hitbox = new Rect(x, y, x + width, y + width);
             }
         });
+
     }
 
     private boolean checkCollision(List<ImageView> obstacles){
@@ -45,50 +47,20 @@ public class Character {
         return false;
     }
 
-    private ImageView checkCollisionInDirection(int direction, List<ImageView> obstacles){
-        Rect projectedHitbox = new Rect(hitbox); // Copy current hitbox
-        for(int i = 0; i < 400; i++){
-            switch (direction) {
-                case 1: // Right
-                    projectedHitbox.offset(speed, 0);
-                    break;
-                case 2: // Left
-                    projectedHitbox.offset(-speed, 0);
-                    break;
-                case 3: // Down
-                    projectedHitbox.offset(0, speed);
-                    break;
-                case 4: // Up
-                    projectedHitbox.offset(0, -speed);
-                    break;
-            }
+    private boolean lookingRigth = true;
 
-            for (ImageView obstacle : obstacles) {
-                Rect obstacleRect = new Rect();
-                obstacle.getHitRect(obstacleRect);
-                if (projectedHitbox.intersect(obstacleRect)) {
-                    return obstacle; // Collision detected in the given direction
-                }
-            }
+    float prevX;
+    float prevY;
+    public void moveCharacter(int direction, List<ImageView> obstacles) {
+        if(checkCollision(obstacles)){
+            imageView.setY(511);
+            imageView.setX(1128);
+            return;
         }
 
-        return null; // No collision
-    }
-
-    private boolean lookingRigth = true;
-    public void moveCharacter(int direction, List<ImageView> obstacles) {
-
         if (!isMoving) {
-            ImageView iv = checkCollisionInDirection(direction, obstacles);
-            if(iv != null){
-                float targetX, targetY;
-                switch(direction){
-                    case 1:{
-                        targetX = iv.getX() - imageView.getWidth();
-                        targetY = imageView.getY();
-                    }
-                }
-            }
+            float targetX = imageView.getX();
+            float targetY = imageView.getY();
 
             switch (direction) {
                 case 1:
@@ -119,8 +91,7 @@ public class Character {
                     break;
             }
 
-            if(checkCollision(obstacles))
-                return;
+
 
             isMoving = true;
 
@@ -148,5 +119,7 @@ public class Character {
                 }
             });
         }
+        prevX = imageView.getX();
+        prevY = imageView.getY();
     }
 }

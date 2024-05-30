@@ -16,8 +16,7 @@ import java.util.List;
 
 public class SinglePlayer extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
-    private GestureDetector gestureDetector;
-    List<ImageView> viewList = new ArrayList<>();
+    private GestureDetector gestureDetector;List<ImageView> viewList = new ArrayList<>();
 
     @Override
     public <T extends View> T findViewById(int id) {
@@ -49,7 +48,49 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
         viewList.add(findViewById(R.id.wallImageLeft));
         viewList.add(findViewById(R.id.wallImageRight));
         viewList.add(findViewById(R.id.wallImageTop));
-
+        viewList.add(findViewById(R.id.wallImage1));
+        viewList.add(findViewById(R.id.wallImage2));
+        viewList.add(findViewById(R.id.wallImage3));
+        viewList.add(findViewById(R.id.wallImage4));
+        viewList.add(findViewById(R.id.wallImage5));
+        viewList.add(findViewById(R.id.wallImage6));
+        viewList.add(findViewById(R.id.wallImage7));
+        viewList.add(findViewById(R.id.wallImage8));
+        viewList.add(findViewById(R.id.wallImage9));
+        viewList.add(findViewById(R.id.wallImage10));
+        viewList.add(findViewById(R.id.wallImage11));
+        viewList.add(findViewById(R.id.wallImage12));
+        viewList.add(findViewById(R.id.wallImage13));
+        viewList.add(findViewById(R.id.wallImage14));
+        viewList.add(findViewById(R.id.wallImage15));
+        viewList.add(findViewById(R.id.wallImage16));
+        viewList.add(findViewById(R.id.wallImage17));
+        viewList.add(findViewById(R.id.wallImage18));
+        viewList.add(findViewById(R.id.wallImage19));
+        viewList.add(findViewById(R.id.wallImage20));
+        viewList.add(findViewById(R.id.wallImage21));
+        viewList.add(findViewById(R.id.wallImage22));
+        viewList.add(findViewById(R.id.wallImage23));
+        viewList.add(findViewById(R.id.wallImage24));
+        viewList.add(findViewById(R.id.wallImage25));
+        viewList.add(findViewById(R.id.wallImage26));
+        viewList.add(findViewById(R.id.wallImage27));
+        viewList.add(findViewById(R.id.wallImage28));
+        viewList.add(findViewById(R.id.wallImage29));
+        viewList.add(findViewById(R.id.wallImage30));
+        viewList.add(findViewById(R.id.wallImage31));
+        viewList.add(findViewById(R.id.wallImage32));
+        viewList.add(findViewById(R.id.wallImage33));
+        viewList.add(findViewById(R.id.wallImage34));
+        viewList.add(findViewById(R.id.wallImage35));
+        viewList.add(findViewById(R.id.wallImage36));
+        viewList.add(findViewById(R.id.wallImage37));
+        viewList.add(findViewById(R.id.wallImage38));
+        viewList.add(findViewById(R.id.wallImage39));
+        viewList.add(findViewById(R.id.wallImage40));
+        viewList.add(findViewById(R.id.wallImage41));
+        viewList.add(findViewById(R.id.wallImage42));
+        viewList.add(findViewById(R.id.wallImage43));
     }
 
     @Override

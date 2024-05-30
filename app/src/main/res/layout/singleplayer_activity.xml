@@ -8,7 +8,7 @@
     <ImageView
         android:id="@+id/wallImage"
         android:layout_width="80dp"
-        android:layout_height="14dp"
+        android:layout_height="100dp"
         android:scaleType="fitXY"
         android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,20 +16,7 @@
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
-
-    <ImageView
-        android:id="@+id/wallImage"
-        android:layout_width="80dp"
-        android:layout_height="14dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mauer_tile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintVertical_bias="0.273" />
 
     <ImageView
         android:id="@+id/characterImage"
@@ -41,7 +28,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/standing_looking_right" />
+        app:srcCompat="@drawable/standing_looking_right"
+        />
 
     <ImageView
         android:id="@+id/wallImageTop"
@@ -74,18 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/wallImage3"
-        android:layout_width="80dp"
-        android:layout_height="14dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mauer_tile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.359"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/wallImage3"
+        android:id="@+id/wallImage1"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -98,7 +75,7 @@
         app:layout_constraintVertical_bias="0.34" />
 
     <ImageView
-        android:id="@+id/wallImage3"
+        android:id="@+id/wallImage2"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -124,7 +101,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage3"
+        android:id="@+id/wallImage4"
         android:layout_width="170dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -137,7 +114,7 @@
         app:layout_constraintVertical_bias="0.682" />
 
     <ImageView
-        android:id="@+id/wallImage4"
+        android:id="@+id/wallImage5"
         android:layout_width="14dp"
         android:layout_height="220dp"
         android:scaleType="fitXY"
@@ -150,7 +127,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <ImageView
-        android:id="@+id/wallImage4"
+        android:id="@+id/wallImage6"
         android:layout_width="14dp"
         android:layout_height="220dp"
         android:scaleType="fitXY"
@@ -163,7 +140,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <ImageView
-        android:id="@+id/wallImage4"
+        android:id="@+id/wallImage7"
         android:layout_width="14dp"
         android:layout_height="220dp"
         android:scaleType="fitXY"
@@ -176,7 +153,7 @@
         app:layout_constraintVertical_bias="0.518" />
 
     <ImageView
-        android:id="@+id/wallImage5"
+        android:id="@+id/wallImage8"
         android:layout_width="14dp"
         android:layout_height="147dp"
         android:scaleType="fitXY"
@@ -189,7 +166,7 @@
         app:layout_constraintVertical_bias="0.564" />
 
     <ImageView
-        android:id="@+id/wallImage5"
+        android:id="@+id/wallImage9"
         android:layout_width="14dp"
         android:layout_height="147dp"
         android:scaleType="fitXY"
@@ -202,7 +179,7 @@
         app:layout_constraintVertical_bias="0.564" />
 
     <ImageView
-        android:id="@+id/wallImage6"
+        android:id="@+id/wallImage10"
         android:layout_width="14dp"
         android:layout_height="147dp"
         android:scaleType="fitXY"
@@ -215,7 +192,7 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <ImageView
-        android:id="@+id/wallImage6"
+        android:id="@+id/wallImage11"
         android:layout_width="14dp"
         android:layout_height="147dp"
         android:scaleType="fitXY"
@@ -228,9 +205,9 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <ImageView
-        android:id="@+id/wallImage6"
+        android:id="@+id/wallImage12"
         android:layout_width="14dp"
-        android:layout_height="147dp"
+        android:layout_height="130dp"
         android:scaleType="fitXY"
         android:src="@drawable/mauer_tile"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -241,7 +218,7 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <ImageView
-        android:id="@+id/wallImage7"
+        android:id="@+id/wallImage13"
         android:layout_width="14dp"
         android:layout_height="32dp"
         android:scaleType="fitXY"
@@ -254,7 +231,7 @@
         app:layout_constraintVertical_bias="0.841" />
 
     <ImageView
-        android:id="@+id/wallImage8"
+        android:id="@+id/wallImage14"
         android:layout_width="60dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -267,7 +244,7 @@
         app:layout_constraintVertical_bias="0.745" />
 
     <ImageView
-        android:id="@+id/wallImage8"
+        android:id="@+id/wallImage15"
         android:layout_width="60dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -280,7 +257,7 @@
         app:layout_constraintVertical_bias="0.848" />
 
     <ImageView
-        android:id="@+id/wallImage8"
+        android:id="@+id/wallImage16"
         android:layout_width="60dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -293,7 +270,7 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <ImageView
-        android:id="@+id/wallImage8"
+        android:id="@+id/wallImage17"
         android:layout_width="60dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -306,7 +283,7 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <ImageView
-        android:id="@+id/wallImage9"
+        android:id="@+id/wallImage18"
         android:layout_width="14dp"
         android:layout_height="30dp"
         android:scaleType="fitXY"
@@ -319,7 +296,7 @@
         app:layout_constraintVertical_bias="0.144" />
 
     <ImageView
-        android:id="@+id/wallImage9"
+        android:id="@+id/wallImage19"
         android:layout_width="14dp"
         android:layout_height="30dp"
         android:scaleType="fitXY"
@@ -332,7 +309,7 @@
         app:layout_constraintVertical_bias="0.144" />
 
     <ImageView
-        android:id="@+id/wallImage9"
+        android:id="@+id/wallImage20"
         android:layout_width="14dp"
         android:layout_height="30dp"
         android:scaleType="fitXY"
@@ -345,7 +322,7 @@
         app:layout_constraintVertical_bias="0.144" />
 
     <ImageView
-        android:id="@+id/wallImage10"
+        android:id="@+id/wallImage21"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -358,7 +335,7 @@
         app:layout_constraintVertical_bias="0.884" />
 
     <ImageView
-        android:id="@+id/wallImage10"
+        android:id="@+id/wallImage22"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -371,7 +348,7 @@
         app:layout_constraintVertical_bias="0.884" />
 
     <ImageView
-        android:id="@+id/wallImage11"
+        android:id="@+id/wallImage23"
         android:layout_width="78dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -384,7 +361,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage11"
+        android:id="@+id/wallImage24"
         android:layout_width="78dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -397,7 +374,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage11"
+        android:id="@+id/wallImage25"
         android:layout_width="78dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -410,7 +387,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage12"
+        android:id="@+id/wallImage26"
         android:layout_width="14dp"
         android:layout_height="80dp"
         android:scaleType="fitXY"
@@ -423,7 +400,7 @@
         app:layout_constraintVertical_bias="0.818" />
 
     <ImageView
-        android:id="@+id/wallImage12"
+        android:id="@+id/wallImage27"
         android:layout_width="14dp"
         android:layout_height="80dp"
         android:scaleType="fitXY"
@@ -436,7 +413,7 @@
         app:layout_constraintVertical_bias="0.818" />
 
     <ImageView
-        android:id="@+id/wallImage13"
+        android:id="@+id/wallImage28"
         android:layout_width="14dp"
         android:layout_height="30dp"
         android:layout_marginStart="52dp"
@@ -448,7 +425,7 @@
         app:layout_constraintVertical_bias="0.813" />
 
     <ImageView
-        android:id="@+id/wallImage13"
+        android:id="@+id/wallImage29"
         android:layout_width="14dp"
         android:layout_height="30dp"
         android:layout_marginStart="52dp"
@@ -460,7 +437,7 @@
         app:layout_constraintVertical_bias="0.813" />
 
     <ImageView
-        android:id="@+id/wallImage14"
+        android:id="@+id/wallImage30"
         android:layout_width="14dp"
         android:layout_height="200dp"
         android:scaleType="fitXY"
@@ -473,7 +450,7 @@
         app:layout_constraintVertical_bias="0.03" />
 
     <ImageView
-        android:id="@+id/wallImage16"
+        android:id="@+id/wallImage31"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:layout_marginStart="176dp"
@@ -485,7 +462,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <ImageView
-        android:id="@+id/wallImage16"
+        android:id="@+id/wallImage32"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:layout_marginStart="176dp"
@@ -497,7 +474,7 @@
         app:layout_constraintVertical_bias="0.768" />
 
     <ImageView
-        android:id="@+id/wallImage17"
+        android:id="@+id/wallImage33"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -510,7 +487,7 @@
         app:layout_constraintVertical_bias="0.559" />
 
     <ImageView
-        android:id="@+id/wallImage17"
+        android:id="@+id/wallImage34"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -523,7 +500,7 @@
         app:layout_constraintVertical_bias="0.682" />
 
     <ImageView
-        android:id="@+id/wallImage15"
+        android:id="@+id/wallImage35"
         android:layout_width="14dp"
         android:layout_height="20dp"
         android:scaleType="fitXY"
@@ -536,7 +513,7 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <ImageView
-        android:id="@+id/wallImage15"
+        android:id="@+id/wallImage36"
         android:layout_width="14dp"
         android:layout_height="20dp"
         android:scaleType="fitXY"
@@ -549,7 +526,7 @@
         app:layout_constraintVertical_bias="0.728" />
 
     <ImageView
-        android:id="@+id/wallImage18"
+        android:id="@+id/wallImage37"
         android:layout_width="14dp"
         android:layout_height="50dp"
         android:scaleType="fitXY"
@@ -562,7 +539,7 @@
         app:layout_constraintVertical_bias="0.274" />
 
     <ImageView
-        android:id="@+id/wallImage18"
+        android:id="@+id/wallImage38"
         android:layout_width="14dp"
         android:layout_height="50dp"
         android:scaleType="fitXY"
@@ -575,7 +552,7 @@
         app:layout_constraintVertical_bias="0.274" />
 
     <ImageView
-        android:id="@+id/wallImage18"
+        android:id="@+id/wallImage39"
         android:layout_width="14dp"
         android:layout_height="50dp"
         android:scaleType="fitXY"
@@ -588,7 +565,7 @@
         app:layout_constraintVertical_bias="0.955" />
 
     <ImageView
-        android:id="@+id/wallImage19"
+        android:id="@+id/wallImage40"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -601,7 +578,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage19"
+        android:id="@+id/wallImage41"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -614,7 +591,7 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
-        android:id="@+id/wallImage19"
+        android:id="@+id/wallImage42"
         android:layout_width="80dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -627,7 +604,7 @@
         app:layout_constraintVertical_bias="0.544" />
 
     <ImageView
-        android:id="@+id/wallImage19"
+        android:id="@+id/wallImage43"
         android:layout_width="60dp"
         android:layout_height="14dp"
         android:scaleType="fitXY"
@@ -638,41 +615,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.214" />
-
-    <ImageView
-        android:id="@+id/wallImage1"
-        android:layout_width="52dp"
-        android:layout_height="14dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mauer_tile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
-
-    <ImageView
-        android:id="@+id/wallImage1"
-        android:layout_width="52dp"
-        android:layout_height="14dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mauer_tile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.214" />
-
-    <ImageView
-        android:id="@+id/wallImage1"
-        android:layout_width="52dp"
-        android:layout_height="14dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/mauer_tile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/wallImageRight"
