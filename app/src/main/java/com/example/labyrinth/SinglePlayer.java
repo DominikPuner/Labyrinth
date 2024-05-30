@@ -38,12 +38,6 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        ImageView characterImageView = findViewById(R.id.characterImage);
-
-        int characterImageResource = R.drawable.standing_looking_right;
-        characterImageView.setImageResource(characterImageResource);
-        characterImageView.setX(10);
-        characterImageView.setY(10);
 
         gestureDetector = new GestureDetector(this, this);
 
@@ -102,7 +96,7 @@ public class SinglePlayer extends AppCompatActivity implements GestureDetector.O
         float SWIPE_VELOCITY_THRESHOLD = 100;
 
         ImageView characterView = findViewById(R.id.characterImage);
-        Character player = new Character(characterView.getWidth(), characterView.getHeight(), characterView.getWidth(), characterView, characterView.getWidth());
+        Character player = new Character(characterView.getWidth(), characterView.getHeight(), characterView.getWidth(), characterView);
 
         if (absDeltaX > absDeltaY) { // Horizontale Bewegung
             if (absDeltaX > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
